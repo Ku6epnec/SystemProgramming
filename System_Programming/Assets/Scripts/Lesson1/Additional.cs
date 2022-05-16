@@ -34,7 +34,7 @@ public class Additional : MonoBehaviour
         cancelTokenSource.Cancel();
         cancelTokenSource.Dispose();
 
-        Debug.Log("Результат: " + result);
+        //Debug.Log("Результат: " + result);
     }
 
     async Task<bool> SecondTimer(CancellationToken cancelToken)
@@ -42,10 +42,10 @@ public class Additional : MonoBehaviour
         await Task.Delay(_maxDelay);
         if (cancelToken.IsCancellationRequested)
         {
-            Debug.Log("Операция в Additional прервана токеном. Секунда не прошла!");
+            //Debug.Log("Операция в Additional прервана токеном. Секунда не прошла!");
             return false;
         }
-        Debug.Log("В Additional секунда прошла");
+        //Debug.Log("В Additional секунда прошла");
         return true;
     }
 
@@ -58,11 +58,11 @@ public class Additional : MonoBehaviour
         }
         if (cancelToken.IsCancellationRequested)
         {
-            Debug.Log("Операция в Additional прервана токеном. Осталось фреймов: " + _frames);
+            //Debug.Log("Операция в Additional прервана токеном. Осталось фреймов: " + _frames);
             return false;
         }
 
-        Debug.Log("В Additional прошло 60 фреймов");
+        //Debug.Log("В Additional прошло 60 фреймов");
         return true;
     }
 }

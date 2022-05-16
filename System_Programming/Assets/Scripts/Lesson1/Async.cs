@@ -26,11 +26,11 @@ public class Async : MonoBehaviour
     {
         if (cancelToken.IsCancellationRequested)
         {
-            Debug.Log("Операция прервана токеном. Секунда не прошла!");
+            //Debug.Log("Операция прервана токеном. Секунда не прошла!");
             return;
         }
         await Task.Delay(_maxDelay);
-        Debug.Log("Секунда прошла");
+        //Debug.Log("Секунда прошла");
     }
 
     async void FramesTimer(CancellationToken cancelToken, int _frames)
@@ -39,13 +39,13 @@ public class Async : MonoBehaviour
         {
             if (cancelToken.IsCancellationRequested)
             {
-                Debug.Log("Операция прервана токеном. Осталось фреймов: " + _frames);
+                //Debug.Log("Операция прервана токеном. Осталось фреймов: " + _frames);
                 return;
             }
 
             _frames--;
             await Task.Yield();
         }
-        Debug.Log("Прошло 60 фреймов");
+        //Debug.Log("Прошло 60 фреймов");
     }
 }

@@ -345,9 +345,12 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.UI.ref.dll"
-"Assets/Scripts/Additional.cs"
-"Assets/Scripts/Async.cs"
-"Assets/Scripts/Unit.cs"
+"Assets/Scripts/Lesson1/Additional.cs"
+"Assets/Scripts/Lesson1/Async.cs"
+"Assets/Scripts/Lesson1/Unit.cs"
+"Assets/Scripts/Lesson2/Jobs.cs"
+"Assets/Scripts/Lesson2/Jobs2.cs"
+"Assets/Scripts/Lesson2/JobTransform.cs"
 -langversion:9.0
 
 /deterministic
